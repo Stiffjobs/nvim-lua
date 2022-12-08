@@ -28,6 +28,10 @@ map('n', '<leader>th', '<C-w>t<C-w>H') -- change horizontal to vertical
 -- Reload config without restart nvim
 map('n', '<leader>r', ':so %<CR>')
 
+-- NvimTree
+map('n', '<C-n>', ':NvimTreeToggle<CR>')
+map('n', '<leader>f', ':NvimTreeRefresh<CR>')
+map('n', '<leader>n', ':NvimTreeFindFile<CR>')
 
 -- Terminal mappings
 map('t', '<Esc>', '<C-\\><C-n>') -- exit

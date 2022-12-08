@@ -22,6 +22,14 @@ require('packer').startup(function(use)
 
 	use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 
+	use {
+  'nvim-tree/nvim-tree.lua',
+ 	 requires = {
+    	'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  	},
+  	tag = 'nightly' -- optional, updated every week. (see issue #1193)
+	}
+
   if install_plugins then
     require('packer').sync()
   end
@@ -37,6 +45,8 @@ vim.cmd('colorscheme gruvbox')
 
 -- flutter-tools
 require("flutter-tools").setup{}
+-- nvim-tree
+require("nvim-tree").setup()
 
 require('core/keymaps')
 require('core/options')
