@@ -34,6 +34,8 @@ require('packer').startup(function(use)
  	 requires = { 'kyazdani42/nvim-web-devicons', opt = true }
  	}
 
+	use 'lukas-reineke/lsp-format.nvim'
+
   if install_plugins then
     require('packer').sync()
   end
