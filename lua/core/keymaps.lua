@@ -36,6 +36,8 @@ map('n', '<leader>n', ':NvimTreeFindFile<CR>')
 -- Terminal mappings
 map('t', '<Esc>', '<C-\\><C-n>') -- exit
 
+-- Flutter-tools
+map('n', '<leader>R', ':FlutterRestart')
 
 --FZF
 map('n', '<C-p>', ':FZF<CR>')

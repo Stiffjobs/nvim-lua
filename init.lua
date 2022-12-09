@@ -29,6 +29,10 @@ require('packer').startup(function(use)
   	},
   	tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
+	use {
+ 	 'nvim-lualine/lualine.nvim',
+ 	 requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+ 	}
 
   if install_plugins then
     require('packer').sync()
@@ -48,6 +52,7 @@ require("flutter-tools").setup{}
 -- nvim-tree
 require("nvim-tree").setup()
 
+require('core/status-line')
 require('core/keymaps')
 require('core/options')
 require('lsp/lspconfig')
