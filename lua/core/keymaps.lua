@@ -37,6 +37,7 @@ map('n', '<leader>n', ':NvimTreeFindFile<CR>')
 map('t', '<Esc>', '<C-\\><C-n>') -- exit
 
 -- Flutter-tools
+map('n', '<leader>fr', ':FlutterReload<CR>')
 map('n', '<leader>fR', ':FlutterRestart<CR>')
 map('n', '<leader>fa', ':FlutterRun<CR>')
 map('n', '<leader>fq', ':FlutterQuit<CR>')
