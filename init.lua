@@ -2,12 +2,14 @@
 
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'joshdick/onedark.vim'
+	use 'navarasu/onedark.nvim'
 	use { 'ellisonleao/gruvbox.nvim' }
 	use 'neovim/nvim-lspconfig'
 
 	use { 'junegunn/fzf', run = ":call fzf#install()" }
 	use { 'junegunn/fzf.vim' }
+
+
 
 	use {
     'hrsh7th/nvim-cmp',
@@ -47,7 +49,11 @@ if install_plugins then
 end
 
 vim.opt.termguicolors = true
-vim.cmd('colorscheme gruvbox')
+--vim.cmd('colorscheme gruvbox')
+require('onedark').setup{
+	style = 'darker'
+}
+require('onedark').load()
 
 -- flutter-tools
 require("flutter-tools").setup{}
