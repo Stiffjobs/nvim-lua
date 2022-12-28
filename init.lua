@@ -4,15 +4,19 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 	use 'navarasu/onedark.nvim'
 	use { 'ellisonleao/gruvbox.nvim' }
-	use 'neovim/nvim-lspconfig'
 
 	use { 'junegunn/fzf', run = ":call fzf#install()" }
 	use { 'junegunn/fzf.vim' }
 
 
-	use 'sainnhe/gruvbox-material'
+	use 'neovim/nvim-lspconfig'
 
+	use({
+		'rose-pine/neovim',
+		as = 'rose-pine',
+	})
 
+	use 'tanvirtin/monokai.nvim'
 
 	use {
     'hrsh7th/nvim-cmp',
@@ -41,6 +45,9 @@ require('packer').startup(function(use)
 
 	use 'lukas-reineke/lsp-format.nvim'
 
+	--treesitter
+	use('nvim-treesitter/nvim-treesitter', {run=':TSUpdate'})
+
   if install_plugins then
     require('packer').sync()
   end
@@ -55,14 +62,15 @@ vim.opt.termguicolors = true
 --vim.cmd('colorscheme gruvbox')
 --require('gruvbox').load()
 --vim.cmd('colorscheme molokai')
-vim.cmd('colorscheme gruvbox-material')
-vim.cmd('let g:gruvbox_material_better_performance = 1')
+--vim.colorscheme = 'rose-pine'
 -- nvim-tree
 require("nvim-tree").setup()
 require('onedark').setup()
 
 require('core/status-line')
+require('plugins/treesitter')
 require('core/keymaps')
+require('core/colors')
 require('core/options')
 require('lsp/lspconfig')
 require('plugins/nvim-cmp')

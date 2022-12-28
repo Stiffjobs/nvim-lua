@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
-  ["gruvbox-material"] = {
-    loaded = true,
-    path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/gruvbox-material",
-    url = "https://github.com/sainnhe/gruvbox-material"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -134,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -148,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/stiffjobs/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   }
 }
 
