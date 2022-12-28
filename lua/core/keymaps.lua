@@ -11,6 +11,7 @@ vim.g.mapleader = ' '
 
 map('i', 'jj', '<Esc>')
 
+map('n', '<leader>pv', vim.cmd.Ex)
 
 -- Window moving
 map('n', '<leader>h', '<C-w>h')

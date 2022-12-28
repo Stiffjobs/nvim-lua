@@ -10,6 +10,9 @@ require('packer').startup(function(use)
 	use { 'junegunn/fzf.vim' }
 
 
+	use 'sainnhe/gruvbox-material'
+
+
 
 	use {
     'hrsh7th/nvim-cmp',
@@ -50,18 +53,18 @@ end
 
 vim.opt.termguicolors = true
 --vim.cmd('colorscheme gruvbox')
-require('onedark').setup{
-	style = 'darker'
-}
-require('onedark').load()
-
--- flutter-tools
-require("flutter-tools").setup{}
+--require('gruvbox').load()
+--vim.cmd('colorscheme molokai')
+vim.cmd('colorscheme gruvbox-material')
+vim.cmd('let g:gruvbox_material_better_performance = 1')
 -- nvim-tree
 require("nvim-tree").setup()
+require('onedark').setup()
 
 require('core/status-line')
 require('core/keymaps')
 require('core/options')
 require('lsp/lspconfig')
 require('plugins/nvim-cmp')
+-- flutter-tools
+require("flutter-tools").setup{}
