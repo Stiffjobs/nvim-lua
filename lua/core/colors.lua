@@ -2,7 +2,7 @@ function ColorMyPencils(color)
 --	color = color or "rose-pine"
 --	vim.cmd.colorscheme(color)
 --	pro, soda, ristretto
-
+	vim.cmd.colorscheme("rose-pine")
 	require('monokai').setup{
 		palette = require('monokai').ristretto
 	}
