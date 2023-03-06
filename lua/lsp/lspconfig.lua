@@ -56,7 +56,7 @@ local on_attach = function(client, bufnr)
   end, bufopts)
   vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
   vim.keymap.set('n', 'rn', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', 'ga', vim.lsp.buf.code_action, bufopts)
+  vim.keymap.set('n', '<C-.>', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
@@ -111,7 +111,7 @@ end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches.
 -- Add your language server below:
-local servers = { 'bashls',  'gopls' ,'dartls'}
+local servers = { 'bashls',  'gopls' ,'dartls', 'rust_analyzer'}
 
 -- Call setup
 for _, lsp in ipairs(servers) do

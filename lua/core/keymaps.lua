@@ -43,5 +43,3 @@ map('n', '<leader>fR', ':FlutterRestart<CR>')
 map('n', '<leader>fa', ':FlutterRun<CR>')
 map('n', '<leader>fq', ':FlutterQuit<CR>')
 
---FZF
-map('n', '<C-p>', ':FZF<CR>')
